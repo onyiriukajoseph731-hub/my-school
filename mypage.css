@@ -203,6 +203,7 @@ h3 {
 @media screen and (max-width: 480px) {
     .section1 h1 {
         font-size: 24px;
+        
     }
 
     .cash {
@@ -213,5 +214,17 @@ h3 {
         flex-direction: column;
         align-items: center;
         gap: 5px;
+    }
+
+    .general::before {
+        inset: auto;       /* Removes the full-screen stretch */
+        width: 100%;       /* Set your custom mobile width (e.g., 100% or a fixed px like 300px) */
+        height: 600px;     /* Set your custom mobile height */
+        top: 20px;         /* Position it from the top */
+        left: 50%;         /* Center it horizontally */
+        transform: translateX(-50%); /* Finishes centering */
+    }
+    .Course { 
+        margin-top: -130px;
     }
 }
